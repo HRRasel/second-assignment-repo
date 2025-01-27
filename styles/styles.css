@@ -1,0 +1,523 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap');
+.font-quicksand{
+    font-family: "Quicksand", serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+  }
+
+  /* shared style */
+
+  .display-flex{
+    display: flex;
+  }
+
+main{
+    max-width: 1440px;
+    margin: 0  auto;
+}
+
+
+.navbar{
+    justify-content: space-between;
+    max-width: 1440px;
+    margin: 0 auto;
+}
+
+
+.banner-bg-size{
+     margin-top: 20px;
+}
+
+.hr{
+    background-color: #FEA301;
+    display: inline-block;
+    width: 450px;
+    height: 2px;
+}
+
+.nav-header{
+   gap: 15px;
+}
+
+.name{
+    font-weight: 700;
+    font-size: 2rem;
+    margin-top: 10px;
+}
+
+.list-item{
+    list-style: none;
+    gap: 30px;
+    font-weight: 700;
+    font-size: 1.3rem;
+    align-items: center;
+}
+
+.item-1{
+     color: #FEA301;
+}
+
+.item-2{
+    color:#01ACFD ;
+}
+
+.item-3{
+      color:#05D4DF ;
+}
+
+.item-4{
+     color: #5D58EF;
+}
+
+.btn{
+   font-weight: 600;
+   font-size: 1.3rem;
+   color: #FFFFFF;
+   background-color: #FEA301;
+   padding: 10px 25px;
+   border-radius: 12px;
+   border: none;
+   margin-top: 10px;
+   margin-bottom: 10px;
+}
+
+.navbar, .banner{
+    max-width: 1440px;
+    margin: 0 auto;
+}
+.navbar{
+    margin-bottom: 20px;
+    height: 62px;
+}
+
+.banner-title{
+    font-size: 3.5rem;
+    font-weight: 700;
+}
+#one{
+    color: #FEA301;
+}
+#two{
+    color: #01ACFD;
+}
+
+.banner-description{
+    font-weight: 400;
+    font-size: 1.3rem;
+}
+
+.btnn{
+    font-weight: 600;
+    font-size: 1.3rem;
+    color: rgba(255, 255, 255, 1);
+    background-color: black;
+    padding: 10px 25px;
+    border-radius: 12px;
+}
+.banner{
+    gap: 50px;
+    height: 575px;
+}
+.banner-body{
+    margin-top: 50px;
+}
+
+
+/* mobile responsive */
+
+@media screen and (max-width:576px) {
+
+      .name, .list-item, .btn{ 
+           display: none;
+      }
+         
+      .banner-content{
+           flex-direction: column-reverse;
+      }
+
+      .banner{
+        text-align: center;
+        margin-left: 20px;
+        width: 390px;
+      }
+      
+      .btnn{
+        margin: 20px;
+      }
+      .navbar{
+        margin-bottom: 30px;
+        margin-left: 20px;
+        width:390px;
+      }
+      .banner-img{
+        margin-left: 15px;
+      }
+ }
+
+/* large device */
+@media screen and ( min-width:576px ) and ( max-width:3000px ) {
+    .mobile-logo, .hr{
+         display:none;
+    }
+}
+
+  
+/* curriculum-section */
+
+.curriculum-body h3{
+    text-align: center;
+    font-weight: 700;
+    font-size: 2.8rem;
+    margin-bottom: 80px;
+}
+
+.curriculum-bg{
+    background-image: url( ../images/bg.png );
+    margin-top: 60px;
+    width: 1440px;
+}
+
+.curriculum-body{
+    margin-left: 50px;
+}
+
+.curriculum-inline{
+    display: grid;
+    grid-template-columns:repeat(3,1fr) ;
+    gap: 25px;
+    margin-bottom: 80px;
+    margin-right: 400px;
+}
+
+.div-1{
+   width: 367px;
+   height: 478px;
+   box-shadow: inset 0px 0px 70px rgb(214, 239, 252); 
+   padding: 30px;
+   text-align: center;
+   border-radius: 1.2rem;
+}
+
+.div-2{
+    width: 367px;
+    height: 478px;
+    box-shadow: inset 0px 0px 70px 0px rgba(255, 244, 220, 1);
+    padding: 30px;
+    text-align: center;
+    border-radius: 1.2rem;
+}
+
+.div-3{
+    width: 367px;
+    height: 478px;
+    box-shadow: inset 0px 0px 70px 0px rgba(242, 232, 255, 1);
+    padding:30px;
+    text-align: center;
+    border-radius: 1.2rem;
+}
+
+.cmn-img{
+    margin-top: 50px;
+    margin-bottom: 40px;
+}
+
+.div-title{
+    color:rgba(32, 32, 32, 1) ;
+    font-weight:700 ;
+    font-size: 1.5rem;
+}
+
+.div-description{
+    color: rgba(128, 128, 128, 1);
+    font-weight: 500;
+    font-size: 1rem;
+    margin-bottom: 50px;
+}
+
+.btn-1{
+    font-weight:700 ;
+    font-size: 1rem;
+    color: rgba(100, 200, 255, 1);
+    border: none;
+    background-color: #FFFFFF;    
+}
+
+.btn-2{
+    font-weight:700 ;
+    font-size: 1rem;
+    color: rgba(240, 170, 0, 1);
+    border: none;
+    background-color: #FFFFFF;
+} 
+
+.btn-3{
+    font-weight:700 ;
+    font-size: 1rem;
+    color: rgba(135, 0, 255, 1) ;
+    border: none;
+    background-color: #FFFFFF;
+}
+
+/* mobile device */
+@media screen and ( max-width:576px ) {
+    .curriculum-inline{
+         grid-template-columns: 1fr; 
+         gap: 20px; 
+         margin-left: 10px;
+         margin-right: 20px;
+         width: 390px;
+    }
+    h3{
+        margin-top: 650px;
+    } 
+    .curriculum-bg{
+        width: 390px;
+    } 
+}
+
+
+/* our stories */
+.story-bg{
+    width: 1440px;
+    box-shadow: inset 0px 0px 100px 0px  #fde4e4;
+    /* background-color: #fde4e4; */
+    background-image: url(../images/bg.png);
+}
+
+.title-1{
+    font-weight: 700;
+    font-size: 2.8rem;
+    color: #000000;
+    margin-bottom: 80px;
+    margin-top: 40px;
+    text-align: center;
+}
+
+.stories-content{
+    display: flex;
+    gap: 19px;
+    margin-left: 150px;
+}
+
+.second-content{
+    display: grid;
+    grid-template-columns: repeat( 2,1fr );
+    gap: 19px;
+}
+.stories-body{
+    width: 540px;
+    background-color: #FFFFFF;
+    border-radius: 20px;
+}
+
+.stories-title{
+    font-weight: 700;
+    font-size: 1.5rem;
+    color: #000000;
+    margin-left: 50px;
+    margin-right: 50px;
+}
+.stories-description{
+    font-weight: 500;
+    font-size: 1rem;
+    color: #666666;
+    margin-left: 50px;
+    margin-right: 50px;
+}
+
+.card{
+    width: 290px;
+    background-color: #FFFFFF;
+    border-radius: 20px;
+}
+.cmn-img{
+    margin-top: 0;
+    width: 290px;
+}
+
+.first-img{
+   width:540px; 
+   margin-bottom: 0;
+}
+
+.story-text{
+    font-weight:700 ;
+    font-size:1rem ;
+    color: #000000;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.same-btn{
+    font-weight: 500;
+    font-size: 1rem;
+    color: #FFFFFF;
+    background-color: #95B226;
+    border-radius: 47px;
+    border: none;
+    padding: 10px 10px;
+    margin-top: -50px;
+    margin-left: 20px;
+}
+
+.dif-btn{
+    font-weight: 500;
+    font-size: 1rem;
+    color: #FFFFFF;
+    background-color: #5D58F0;
+    border-radius: 47px;
+    border: none;
+    padding: 10px 10px;
+    margin-top: -50px;
+    margin-left: 20px;
+}
+
+.stories-btn{
+    font-weight: 500;
+    font-size: 1rem;
+    color: #FFFFFF;
+    background-color: #3CD8E8;
+    border-radius: 47px;
+    border: none;
+    padding: 15px 15px;
+    margin-top: -60px;
+    margin-left: 50px;
+}
+
+.tnd-btn{
+    color: #FFFFFF;
+    background-color: #000000;
+    font-weight: 700;
+    font-size: 1.2rem;
+    margin-top: 80px;
+    margin-bottom: 60px;
+    padding: 10px 40px;
+     margin-left: 700px;
+     border-radius: 15px;
+}
+
+.card-5{
+    width: 290px;
+    background-color: #FFFFFF;
+    border-radius: 20px;
+}
+
+/* mobile defice */
+@media screen and ( max-width:576px ) {
+    .stories-content{
+        flex-direction: column;
+    }
+    .stories-body{
+        display: none;
+    }
+    .second-content{
+         grid-template-columns: repeat(2,1fr);
+         gap: 5px;
+         margin-left: -10;
+         max-width: 390px;
+    }
+    .title-1{
+        margin-left: 10px;
+    }
+    .story-bg{
+        width: 390px;
+    }
+    .card{
+        max-width:170px;
+    }
+    .tnd-btn{
+        margin-left: 40px;
+    }
+}
+
+/* large device */
+@media screen and ( min-width:576px ) and ( max-width:3000px ) {
+    .card-5{
+        display:none;
+    }
+    
+}
+
+
+
+/* footer */
+.footer-bg{
+    width: 1440px;
+    background-color: #01ACFD;
+    margin: 0 auto;
+}
+
+.kinder{
+    display: flex;
+    gap: 0;
+}
+
+#kids-logo{
+    height: 82px;
+    width: 81px;
+    margin-top: 40px;
+    background-color: #FFFFFF;
+}
+
+.footer-head{
+    font-weight: 700;
+    font-size: 2.6rem;
+    color: #FFFFFF;
+    margin-top: 30px;
+}
+
+.second-heading{
+    font-weight: 700;
+    font-size: 1.5rem;
+    color: #FFFFFF;
+    margin-left: 30px;
+}
+
+.footer-list{
+    list-style: none;
+    color: #FFFFFF;
+    font-weight: 400;
+    font-size: 1.2rem;
+}
+
+.list-5{
+    margin-bottom: 30px;
+}
+
+.third-heading{
+    font-weight: 700;
+    font-size: 1.5rem;
+    color: #FFFFFF;
+}
+
+.footer-item{
+    width: 1070px;
+    margin: 0 auto;
+    padding-top: 150px;
+    padding-bottom: 180px;
+}
+ 
+.footer-content{
+    display: grid;
+    grid-template-columns: repeat( 3,1fr );
+    gap: 120px;
+}
+
+
+/* mobile device */
+@media  screen and ( max-width:576px ) {
+    .footer-content{
+        display: block;
+        max-width: 357px;
+    }
+    .footer-bg{
+        max-width: 390px;
+        padding: 10px;
+    }
+    .list-5{
+        margin-left: 0;
+    }
+
+}
+ 
